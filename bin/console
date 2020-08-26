@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+use Illuminate\Container\Container;
+use Symfony\Component\Console\Application;
+use Psr\Container\ContainerInterface;
+use PhpLab\Core\Libs\Env\DotEnvHelper;
+use PhpLab\Core\Console\Helpers\CommandHelper;
+
+/** @var ContainerInterface $container */
+
+require_once __DIR__ . '/../src/Bootstrap/autoload.php';
+DotEnvHelper::init();
+include __DIR__ . '/../config/bootstrap.php';
+
+$consoleConfig = include __DIR__ . '/../config/console.php';
+$container = Container::getInstance();
+CommandHelper::registerFromNamespaceList($consoleConfig['namespaceList'], $container);
+
+$application = $container->get(Application::class);
+$application->run();
