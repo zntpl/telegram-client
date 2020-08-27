@@ -8,12 +8,11 @@
         "znsandbox/telegram": "dev-master",
         "zncore/db": "dev-master",
         "zncore/ddd": "dev-master",
+        "znfork/danog_madelineproto": "dev-master",
 
         "symfony/cache": "^5.2@dev",
         "symfony/validator": "4.*",
-        "workerman/workerman": "^4.0",
-
-        "php7fork/danog_madelineproto": "v0.0.3"
+        "workerman/workerman": "^4.0"
     },
     "require-dev": {
         "zntool/dev": "dev-master",
@@ -40,7 +39,7 @@
         },
         {
             "type": "git",
-            "url": "https://github.com/php7fork/danog_madelineproto.git"
+            "url": "https://github.com/znfork/danog_madelineproto.git"
         }
     ]
 }
