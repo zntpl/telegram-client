@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Container\Container;
-use PhpBundle\TelegramClient\Helpers\WebHelper;
+use ZnSandbox\Telegram\Helpers\WebHelper;
 use App\Dialog\Domain\Services\PredictService;
-use PhpLab\Core\Exceptions\NotFoundException;
+use ZnCore\Base\Exceptions\NotFoundException;
 use Psr\Container\ContainerInterface;
 
 require_once __DIR__ . '/../src/Bootstrap/autoload.php';

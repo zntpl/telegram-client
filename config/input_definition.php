@@ -1,6 +1,6 @@
 <?php
 
-use PhpBundle\TelegramClient\Handlers\BaseInputMessageEventHandler;
+use ZnSandbox\Telegram\Handlers\BaseInputMessageEventHandler;
 use danog\MadelineProto\APIFactory;
 
 /** @var BaseInputMessageEventHandler $this */
