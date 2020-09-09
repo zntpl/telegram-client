@@ -10,7 +10,7 @@ return [
         'directory' => [
             'default' => '/src/Migrations',
             '/src/Dialog/Domain/Migrations',
-            '/vendor/php7bundle/telegram-client/src/Migrations',
+            '/vendor/znsandbox/sandbox/src/Telegram/Migrations',
             '/vendor/my-bundles/top/src/Domain/Migrations',
         ],
     ],
