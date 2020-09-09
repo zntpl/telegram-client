@@ -7,7 +7,7 @@
 
         "znsandbox/telegram": "dev-master",
         "zncore/db": "dev-master",
-        "zncore/ddd": "dev-master",
+        "zncore/domain": "dev-master",
         "znfork/danog_madelineproto": "dev-master",
 
         "symfony/cache": "^5.2@dev",
