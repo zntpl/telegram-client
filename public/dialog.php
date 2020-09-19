@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Container\Container;
-use ZnSandbox\Telegram\Helpers\WebHelper;
+use ZnLib\Telegram\Domain\Helpers\WebHelper;
 use App\Dialog\Domain\Services\PredictService;
 use ZnCore\Base\Exceptions\NotFoundException;
 use Psr\Container\ContainerInterface;

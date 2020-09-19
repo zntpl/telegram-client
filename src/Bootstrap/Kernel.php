@@ -22,9 +22,9 @@ class Kernel
     private function bindContainer(Container $container) {
         $container->bind(Application::class, Application::class, true);
         $this->bindApi($container);
-        $container->bind(\ZnSandbox\Telegram\Services\ResponseService::class, \ZnSandbox\Telegram\Services\ResponseService::class, true);
-        $container->bind(\ZnSandbox\Telegram\Services\StateService::class, \ZnSandbox\Telegram\Services\StateService::class, true);
-        $container->bind(\ZnSandbox\Telegram\Services\UserService::class, \ZnSandbox\Telegram\Services\UserService::class, true);
+        $container->bind(\ZnLib\Telegram\Domain\Services\ResponseService::class, \ZnLib\Telegram\Domain\Services\ResponseService::class, true);
+        $container->bind(\ZnLib\Telegram\Domain\Services\StateService::class, \ZnLib\Telegram\Domain\Services\StateService::class, true);
+        $container->bind(\ZnLib\Telegram\Domain\Services\UserService::class, \ZnLib\Telegram\Domain\Services\UserService::class, true);
         $container->bind(\App\Dialog\Domain\Interfaces\Repositories\TagRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\TagRepository::class);
         $container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerRepository::class);
         $container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerTagRepository::class);

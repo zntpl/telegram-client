@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Container\Container;
-use ZnSandbox\Telegram\Helpers\WebHelper;
+use ZnLib\Telegram\Domain\Helpers\WebHelper;
 use danog\MadelineProto\API;
 use Psr\Container\ContainerInterface;
 
