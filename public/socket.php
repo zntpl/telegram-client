@@ -2,7 +2,7 @@
 
 use Illuminate\Container\Container;
 use ZnLib\Telegram\Domain\Helpers\WebHelper;
-use App\Dialog\Domain\Services\PredictService;
+use ZnBundle\TalkBox\Domain\Services\PredictService;
 use ZnCore\Base\Exceptions\NotFoundException;
 use Psr\Container\ContainerInterface;
 

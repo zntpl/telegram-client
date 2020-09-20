@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Dialog\Domain\Services\PredictService;
+use ZnBundle\TalkBox\Domain\Services\PredictService;
 use Illuminate\Container\Container;
 use PHPUnit\Framework\TestCase;
 

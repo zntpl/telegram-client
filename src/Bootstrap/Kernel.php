@@ -25,10 +25,10 @@ class Kernel
         $container->bind(\ZnLib\Telegram\Domain\Services\ResponseService::class, \ZnLib\Telegram\Domain\Services\ResponseService::class, true);
         $container->bind(\ZnLib\Telegram\Domain\Services\StateService::class, \ZnLib\Telegram\Domain\Services\StateService::class, true);
         $container->bind(\ZnLib\Telegram\Domain\Services\UserService::class, \ZnLib\Telegram\Domain\Services\UserService::class, true);
-        $container->bind(\App\Dialog\Domain\Interfaces\Repositories\TagRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\TagRepository::class);
-        $container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerRepository::class);
-        $container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerTagRepository::class);
-        $container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerOptionRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerOptionRepository::class);
+        $container->bind(\ZnBundle\TalkBox\Domain\Interfaces\Repositories\TagRepositoryInterface::class, \ZnBundle\TalkBox\Domain\Repositories\Eloquent\TagRepository::class);
+        $container->bind(\ZnBundle\TalkBox\Domain\Interfaces\Repositories\AnswerRepositoryInterface::class, \ZnBundle\TalkBox\Domain\Repositories\Eloquent\AnswerRepository::class);
+        $container->bind(\ZnBundle\TalkBox\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface::class, \ZnBundle\TalkBox\Domain\Repositories\Eloquent\AnswerTagRepository::class);
+        $container->bind(\ZnBundle\TalkBox\Domain\Interfaces\Repositories\AnswerOptionRepositoryInterface::class, \ZnBundle\TalkBox\Domain\Repositories\Eloquent\AnswerOptionRepository::class);
         $container->bind(\MyBundles\Top\Domain\Interfaces\Repositories\ShopRepositoryInterface::class, \MyBundles\Top\Domain\Repositories\Eloquent\ShopRepository::class);
         $container->bind(FilesystemAdapter::class, function () {
             return new FilesystemAdapter('app', \ZnCore\Base\Enums\Measure\TimeEnum::SECOND_PER_HOUR, $_ENV['CACHE_DIRECTORY']);
