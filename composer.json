@@ -6,7 +6,9 @@
         "guzzlehttp/guzzle": "6.*",
 
         "znsandbox/sandbox": "dev-master",
-        "zncore/db": "dev-master",
+        "znlib/db": "dev-master",
+        "znlib/migration": "dev-master",
+        "znlib/fixture": "dev-master",
         "zncore/domain": "dev-master",
         "znfork/danog_madelineproto": "dev-master",
 
