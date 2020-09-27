@@ -4,13 +4,13 @@
 use Illuminate\Container\Container;
 use Symfony\Component\Console\Application;
 use Psr\Container\ContainerInterface;
-use ZnCore\Base\Libs\Env\DotEnvHelper;
+use ZnCore\Base\Libs\DotEnv\DotEnv;
 use ZnLib\Console\Symfony4\Helpers\CommandHelper;
 
 /** @var ContainerInterface $container */
 
 require_once __DIR__ . '/../src/Bootstrap/autoload.php';
-DotEnvHelper::init();
+DotEnv::init();
 include __DIR__ . '/../config/bootstrap.php';
 
 $consoleConfig = include __DIR__ . '/../config/console.php';

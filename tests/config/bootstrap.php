@@ -1,6 +1,6 @@
 <?php
 
-use ZnCore\Base\Libs\Env\DotEnvHelper;
+use ZnCore\Base\Libs\DotEnv\DotEnv;
 
-DotEnvHelper::init();
+DotEnv::init();
 require_once __DIR__ . '/../../config/bootstrap.php';
