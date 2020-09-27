@@ -18,6 +18,10 @@
     },
     "require-dev": {
         "zntool/dev": "dev-master",
+        "zntool/package": "dev-master",
+        "zntool/generator": "dev-master",
+        "zntool/phar": "dev-master",
+        "zntool/stress": "dev-master",
         "zntool/test": "dev-master"
     },
     "config": {
